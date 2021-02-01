@@ -16,7 +16,8 @@ CLASS z_ptac_main IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
     me->out = out.
 
-    hello_world(  ).
+    DATA(dog) = NEW z_ptac_dog(  ).
+    dog->woof(  ).
   ENDMETHOD.
 
 
